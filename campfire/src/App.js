@@ -13,17 +13,20 @@ class App extends Component {
     }
   }
   render() {
+    
     if (this.state.loggedIn === false){
       return (
-        <div style={app_style} className="App container">
+        <div style={app_style} className="App">
           <Landing />
         </div>
       )}
       else {
         return (
-        <div style={app_style} className="App container">
-
+        <div style={app_style} className="App">
+          <Header />
+          <div className="row">
           <Network />
+          </div>
         </div>
       );
     }
@@ -31,9 +34,8 @@ class App extends Component {
 }
 
 const app_style={
-  backgroundColor: '#4D7F99',
-  height : '90vh',
-  // color : 'white'
+  backgroundColor: '#2fa59a',
+  minHeight : '100vh',
 }
 
 export default App;

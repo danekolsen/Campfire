@@ -10,7 +10,7 @@ export class Header extends Component {
             <li><a href="#">Activity Feed</a></li>
             <li><a href="#">Forum</a></li>
             <li><a href="#">Network</a></li>
-            <li><a href="#">Inbox</a></li>
+            <li><a href="#">Inbox<span class="new badge red">4</span></a></li>
             <li><a href="#">Profile</a></li>
           </ul>
         </div>

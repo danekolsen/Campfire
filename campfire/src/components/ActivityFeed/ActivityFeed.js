@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ActivityPost from './ActivityPost'
 
+
 export class ActivityFeed extends Component {
   render() {
     const allPosts = [
@@ -11,7 +12,7 @@ export class ActivityFeed extends Component {
       {user: 'Dane5', text: 'posted a question' , at: '4 mins ago'},
     ]
     return allPosts.map((post) => (
-      <ul class="collection">
+      <ul  class="collection">
         <ActivityPost post={post}  />
       </ul>
       ))

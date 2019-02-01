@@ -44,7 +44,7 @@ class App extends Component {
 }
 
 const app_style={
-  backgroundColor: '#2fa59a',
+  backgroundColor: '#BDBDBD',
   minHeight : '100vh',
 }
 

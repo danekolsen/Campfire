@@ -8,16 +8,10 @@ export class Inbox extends Component {
       <div>
           <ul className="collapsible popout">
             <li>
-              <div className="collapsible-header row"> 
-                  <div className="col s m l xl3">
-                    <p>From: Sruthi Suryadevara</p>
-                  </div>
-                  <div className="col s m l xl6">
-                    <p>Subject: How is the clickable coming along?</p>
-                  </div>
-                  <div className="col s m l xl2">
-                    <p>1/29/2019</p>
-                  </div>
+              <div className="collapsible-header">
+                <div className="left-align"> <p>From: Sruthi Suryadevara</p></div>
+                <div className="center-align truncate"><p>Subject: How is the clickable coming along?</p></div>
+                <div className="right-align"><p>1/29/2019</p></div>
               </div>
               <div className="collapsible-body white">
                 <label>

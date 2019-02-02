@@ -14,13 +14,14 @@ export class Header extends Component {
         <div>
           <nav className="indigo">
             <div  className="nav-wrapper container">
-              <a href="#!" style={logoStyle} className="brand-logo"> Campfire </a>
+              <Link to="/"  style={logoStyle} className="brand-logo"> Campfire </Link>
               <ul id="nav-mobile" className="right hide-on-med-and-down">
                 <li> <Link to="/"> Activity Feed </Link> </li>
                 <li> <Link to="/forum"> Forum </Link> </li>
                 <li> <Link to="/network"> Network </Link> </li>
                 <li> <Link to="/inbox"> Inbox <span class="new badge red accent-2">4</span> </Link> </li>
                 <li> <Link to="/profile"> Profile </Link> </li>
+                <li><button className="btn-small red accent-2"><i class="material-icons">exit_to_app</i></button></li>
               </ul>
             </div>
           </nav>

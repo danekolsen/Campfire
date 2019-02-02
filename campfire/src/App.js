@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header'
 import Landing from './components/Landing/Landing'
-import ActivityFeed from './components/ActivityFeed/ActivityFeed'
-import Inbox from './components/Inbox/Inbox'
-
-
-import Network from './components/Network/Network'
 
 class App extends Component {
   constructor(props){
@@ -15,7 +10,7 @@ class App extends Component {
     }
   }
   render() {
-    
+
     if (this.state.loggedIn === false){
       return (
         <div style={app_style} className="App">
@@ -26,17 +21,6 @@ class App extends Component {
         return (
         <div style={app_style} className="App">
           <Header />
-          {/* <div className="container" >
-          <ActivityFeed />
-          </div> */}
-          {/* <div className='container'>
-            <div className="row">
-              <Network />
-            </div>
-          </div> */}
-          <div className="container" >
-            <Inbox />  
-          </div>
         </div>
       );
     }

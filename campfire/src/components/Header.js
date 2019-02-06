@@ -21,9 +21,14 @@ export class Header extends Component {
                 <li> <Link to="/network"> Network </Link> </li>
                 <li> <Link to="/inbox"> Inbox <span class="new badge red accent-2">4</span> </Link> </li>
                 <li> <Link to="/profile"> Profile </Link> </li>
-                <li><Link to="/logout"><i class="material-icons">exit_to_app</i></Link></li>
+                <li><a className='dropdown-trigger' href='#' data-target='dropdown1'><i className="material-icons">expand_more</i></a></li>
               </ul>
             </div>
+            <ul id='dropdown1' className='dropdown-content'>
+              <li><a href="#!">About Campfire</a></li>
+              <li><a href="#!">Logout</a></li>
+            </ul>
+
           </nav>
 
           <Route exact path="/" component={RenderActivityFeed} />

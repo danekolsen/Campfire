@@ -14,9 +14,9 @@ export class Header extends Component {
         <div>
           <nav>
             <div  className="nav-wrapper container">
-              <a href="#!" className="brand-logo"> Campfire </a>
+              <a href="#" className="brand-logo"> Campfire </a>
               <ul id="nav-mobile" className="right hide-on-med-and-down">
-                <li> <Link to="/"> Activity Feed </Link> </li>
+                <li> <Link to="/feed"> Activity Feed </Link> </li>
                 <li> <Link to="/forum"> Forum </Link> </li>
                 <li> <Link to="/network"> Network </Link> </li>
                 <li> <Link to="/inbox"> Inbox <span class="new badge red">4</span> </Link> </li>
@@ -25,7 +25,7 @@ export class Header extends Component {
             </div>
           </nav>
 
-          <Route exact path="/" component={RenderActivityFeed} />
+          <Route exact path="/feed" component={RenderActivityFeed} />
           <Route path="/forum" component={RenderForum} />
           <Route path="/network" component={RenderNetwork} />
           <Route path="/inbox" component={RenderInbox} />

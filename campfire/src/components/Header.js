@@ -12,15 +12,20 @@ export class Header extends Component {
     return (
       <Router>
         <div>
-          <nav>
+          <nav className="indigo">
             <div  className="nav-wrapper container">
+<<<<<<< HEAD
               <a href="#" className="brand-logo"> Campfire </a>
+=======
+              <Link to="/"  style={logoStyle} className="brand-logo"> Campfire </Link>
+>>>>>>> 9351272cc8f4aeca6b97838d0ef6ff5591caf4ca
               <ul id="nav-mobile" className="right hide-on-med-and-down">
                 <li> <Link to="/feed"> Activity Feed </Link> </li>
                 <li> <Link to="/forum"> Forum </Link> </li>
                 <li> <Link to="/network"> Network </Link> </li>
-                <li> <Link to="/inbox"> Inbox <span class="new badge red">4</span> </Link> </li>
+                <li> <Link to="/inbox"> Inbox <span class="new badge red accent-2">4</span> </Link> </li>
                 <li> <Link to="/profile"> Profile </Link> </li>
+                <li><Link to="/logout"><i class="material-icons">exit_to_app</i></Link></li>
               </ul>
             </div>
           </nav>
@@ -79,8 +84,8 @@ function RenderProfile(){
   );
 }
 
-
-
-
+const logoStyle = {
+  fontFamily: 'Pacifico, cursive',
+}
 
 export default Header

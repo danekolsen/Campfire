@@ -1,20 +1,53 @@
 import React, { Component } from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+} from "react-router-dom";
 
 export class LinkedInLogin extends Component {
+  state = { redirectToReferrer: false };
+
+  // login = () => {
+  //   fakeAuth.authenticate(() => {
+  //     this.setState({ redirectToReferrer: true });
+  //   });
+  // };
+
   render() {
+    // let { from } = this.props.location.state || { from: { pathname: "/" } };
+    // let { redirectToReferrer } = this.state;
+    //
+    // if (redirectToReferrer) return <Redirect to={from} />;
+    //
     return (
       <div>
-        <a onClick="" href="#" style={linkedin_btn}className="waves-effect waves-light btn-large"><i className="fab fa-linkedin"></i>  Login with LinkedIn</a>
       </div>
     )
   }
 }
 
-const linkedin_btn={
-  backgroundColor: '#0077b5',
-  fontSize: '20px',
-  textCenter: 'center'
-}
+
+// class Login extends React.Component {
+//
+//
+//
+//
+//   render() {
+//     let { from } = this.props.location.state || { from: { pathname: "/" } };
+//     let { redirectToReferrer } = this.state;
+//
+//     if (redirectToReferrer) return <Redirect to={from} />;
+//
+//     return (
+//       <div>
+//         <p>You must log in to view the page at {from.pathname}</p>
+//         <button onClick={this.login}>Log in</button>
+//       </div>
+//     );
+//   }
+// }
+
 
 
 export default LinkedInLogin
